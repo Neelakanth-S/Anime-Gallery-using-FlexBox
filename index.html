@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gallery</title>
+    <style>
+       *{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    transition: ease-in-out 0.5s;
+}
+#gallery{
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+img{
+    width: 500px;
+    height: 250px;
+}
+img:hover{
+    transform: scale(0.95);
+}
+.active-image{
+    position: fixed;
+    top: 20px;
+    left: auto;
+    margin: 10vh auto;
+    width: 80vw;
+    height: 80vh;
+    z-index: 900;
+}
+h1{
+    text-align: center;
+    color: rgb(240, 34, 6);
+}
+body{
+    background-color: lightblue;
+}
+    </style>
+</head>
+<body>
+    <h1>Neelakanth's Anime Gallery </h1>
+    <div id="gallery">
+        <div class="row">
+            <img src="https://steamuserimages-a.akamaihd.net/ugc/1484453212509789147/361C4BBC9AFF86E5595E429B004BA086CF2ECD1B/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" id="1" class=""/>
+            <img src="https://lh3.googleusercontent.com/proxy/pV5JO5h5vUwfeTJ_ciwFkIyFQU5ltwqVQTwRyQ2fZ_VojbPfrQvBVwDSOu3aIsby09jDjKpYXqIO32_TN7g-azMvuwrIy2XbqeOzWNlmlVbq0ldGlS8kMZ068xo_t995YStpUx6NDoqdpHEy_4-gAEWZ6s-gsJqv_bP9tTB0X_5L" id="2" class=""/>
+            <img src="https://cdn.wallpapersafari.com/46/82/UI452n.jpg" id="3"/>
+        </div>
+        <div class="row">
+            <img src="https://p4.wallpaperbetter.com/wallpaper/287/244/1005/uzumaki-naruto-konoha-village-hokage-anime-wallpaper-preview.jpg" id="4"/>
+            <img src="https://lh3.googleusercontent.com/kwaglSV2J-3rzlKiLaS-YmJulx9s6RiIBsBYHnZxSgg14pKdKK0Ia4PgzEIMWfnMVcZzrQZlbawV8If6vVWfvKUY=w640-h400-e365-rj-sc0x00ffffff" id="5"/>
+            <img src="https://wallpaperaccess.com/full/36626.jpg" id="6"/>
+        </div>
+        <div class="row">
+            <img src="https://wallpaperaccess.com/full/109332.jpg" id="7"/>
+            <img src="https://external-preview.redd.it/fofOa-h_ns4elEeAa0FyLhaayMjh1dIcofZYKFK2008.jpg?width=640&crop=smart&auto=webp&s=e80ad76f56b469859df0f0324c25dfd061265532" id="8"/>
+            <img src="https://coolthemestores.com/wp-content/uploads/2021/01/black-clover-featured.jpg" id="9"/>
+        </div>
+    </div>
+    <script>
+    document.getElementById("1").addEventListener('mouseenter',_=>{
+    addEventListener('click',_=>{
+        document.getElementById('1').classList.add("active-image")
+    })
+    console.log("aaya mouse")
+})
+document.getElementById("1").addEventListener('mouseleave',_=>{
+    addEventListener('click',_=>{
+        document.getElementById('1').classList.remove("active-image")
+    })
+})
+
+//second image
+document.getElementById("2").addEventListener('mouseenter',_=>{
+    addEventListener('click',_=>{
+        document.getElementById('2').classList.add("active-image")
+    })
+    console.log("aaya mouse")
+})
+document.getElementById("2").addEventListener('mouseleave',_=>{
+    addEventListener('click',_=>{
+        document.getElementById('2').classList.remove("active-image")
+    })
+})
+
+//third image
+document.getElementById("3").addEventListener('mouseenter',_=>{
+    addEventListener('click',_=>{
+        document.getElementById('3').classList.add("active-image")
+    })
+    console.log("aaya mouse")
+})
+document.getElementById("3").addEventListener('mouseleave',_=>{
+    addEventListener('click',_=>{
+        document.getElementById('3').classList.remove("active-image")
+    })
+})
+
+//fourth image
+document.getElementById("4").addEventListener('mouseenter',_=>{
+    addEventListener('click',_=>{
+        document.getElementById('4').classList.add("active-image")
+    })
+    console.log("aaya mouse")
+})
+document.getElementById("4").addEventListener('mouseleave',_=>{
+    addEventListener('click',_=>{
+        document.getElementById('4').classList.remove("active-image")
+    })
+})
+
+//fifth image
+document.getElementById("5").addEventListener('mouseenter',_=>{
+    addEventListener('click',_=>{
+        document.getElementById('5').classList.add("active-image")
+    })
+    console.log("aaya mouse")
+})
+document.getElementById("5").addEventListener('mouseleave',_=>{
+    addEventListener('click',_=>{
+        document.getElementById('5').classList.remove("active-image")
+    })
+})
+
+//sixth image
+document.getElementById("6").addEventListener('mouseenter',_=>{
+    addEventListener('click',_=>{
+        document.getElementById('6').classList.add("active-image")
+    })
+    console.log("aaya mouse")
+})
+document.getElementById("6").addEventListener('mouseleave',_=>{
+    addEventListener('click',_=>{
+        document.getElementById('6').classList.remove("active-image")
+    })
+})
+
+//seventh image
+document.getElementById("7").addEventListener('mouseenter',_=>{
+    addEventListener('click',_=>{
+        document.getElementById('7').classList.add("active-image")
+    })
+    console.log("aaya mouse")
+})
+document.getElementById("7").addEventListener('mouseleave',_=>{
+    addEventListener('click',_=>{
+        document.getElementById('7').classList.remove("active-image")
+    })
+})
+
+//eight image
+document.getElementById("8").addEventListener('mouseenter',_=>{
+    addEventListener('click',_=>{
+        document.getElementById('8').classList.add("active-image")
+    })
+    console.log("aaya mouse")
+})
+document.getElementById("8").addEventListener('mouseleave',_=>{
+    addEventListener('click',_=>{
+        document.getElementById('8').classList.remove("active-image")
+    })
+})
+
+//ninth image
+document.getElementById("9").addEventListener('mouseenter',_=>{
+    addEventListener('click',_=>{
+        document.getElementById('9').classList.add("active-image")
+    })
+    console.log("aaya mouse")
+})
+document.getElementById("9").addEventListener('mouseleave',_=>{
+    addEventListener('click',_=>{
+        document.getElementById('9').classList.remove("active-image")
+    })
+})
+      
+    </script>
+</body>
+</html>
